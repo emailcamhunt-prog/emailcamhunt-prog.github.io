@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tesla sign-in done</title>
+<body style="font-family:sans-serif;padding:1em">
+<h2>Tesla sign-in complete</h2>
+<p>Copy this whole link and send it back (it expires in a few minutes):</p>
+<textarea id="u" rows="6" style="width:100%"></textarea>
+<button onclick="navigator.clipboard.writeText(document.getElementById('u').value);this.textContent='Copied!'" style="font-size:1.2em;margin-top:.5em">Copy</button>
+<script>document.getElementById('u').value = location.href;</script>
+</body>
